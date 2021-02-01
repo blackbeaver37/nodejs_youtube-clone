@@ -1,10 +1,10 @@
 export const videos = [
     {
         id:1000,
-        titile: 'Video_1',
+        title: 'Video_1',
         description: 'This is Video Number One',
         views: 24,
-        videoFile: 'https://archive.org/details/BigBuckBunny_124',
+        videoFile: 'https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4',
         creator: {
             id: 10000,
             name: 'Kim',
@@ -13,10 +13,10 @@ export const videos = [
     },
     {
         id:1001,
-        titile: 'Video_2',
+        title: 'Video_2',
         description: 'This is Video Number Two',
         views: 14,
-        videoFile: 'https://archive.org/details/BigBuckBunny_124',
+        videoFile: 'https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4',
         creator: {
             id: 10001,
             name: 'Lee',
@@ -25,10 +25,10 @@ export const videos = [
     },
     {
         id:1002,
-        titile: 'Video_3',
+        title: 'Video_3',
         description: 'This is Video Number Three',
         views: 412,
-        videoFile: 'https://archive.org/details/BigBuckBunny_124',
+        videoFile: 'https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4',
         creator: {
             id: 10002,
             name: 'Park',
