@@ -24,11 +24,11 @@ app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(helmet());
-app.use(
-    helmet({
-        contentSecurityPolicy: false,
-    })
-);
+// 동영상 재생 관련
+app.use(function(req, res, next) {
+    res.setHeader("Content-Security-Policy", "script-src 'self' https://archive.org");
+    return next();
+    });
 app.use(morgan('dev'));
 // Local Middleware 설정
 app.use(localsMiddleware)
