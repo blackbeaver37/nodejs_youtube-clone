@@ -15,7 +15,7 @@ const handleOpen = () => {
 }
 
 const handleError = (error) => {
-    console.log(`🟥 Error on DB Connection : ${error}`);
+    console.log(`🟥 Error on DB Connection : \n 🟥 => ${error}`);
 }
 
 db.once('open', handleOpen);
