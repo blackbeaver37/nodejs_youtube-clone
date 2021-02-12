@@ -29,6 +29,8 @@ app.use(function(req, res, next) {
     res.setHeader("Content-Security-Policy", "script-src 'self' https://archive.org");
     return next();
     });
+// 라우터가 아닌 디렉토리로 설정
+app.use("/uploads", express.static("uploads"));
 app.use(morgan('dev'));
 // Local Middleware 설정
 app.use(localsMiddleware)
